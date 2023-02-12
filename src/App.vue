@@ -14,17 +14,66 @@ import HelloWorld from './components/HelloWorld.vue'
   <HelloWorld msg="Vite + Vue" />
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+<style>
+.two {
+   display: flex;
+   flex-direction: row;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+.card {
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  height: auto;
+  width: 300px;
+  background-color: #D3D3D3;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  border-radius: 25px;
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+@media screen and (min-width: 800px) {
+  .btn {
+    visibility: hidden;
+  }
 }
+
+@media screen and (max-width: 500px) {
+  .card {
+  text-transform: var;
+  width: var;
+  font-size: 4vw;
+  }
+}
+
+button {
+  text-transform: uppercase;
+  padding: 8px 8px;
+  margin: 10px;
+  border: 2px dashed white;     
+  background-color: #a71c19;
+  color: white;
+}
+
+img{
+  margin:25px;
+}
+
+/* .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+} */
+
+button:hover {
+  border: 2px dashed #a71c19;
+  background-color: white;
+  color: #a71c19;
+}
+
+button:focus {
+  border: 2px dashed #a71c19;
+  background-color: white;
+  color: #a71c19;
+}   
+
 </style>
